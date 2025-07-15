@@ -6,7 +6,7 @@ import (
 	"strconv"
 )
 
-func main() {
+func main1() {
 	// 题目01：数组中唯一数
 	arrInt := [...]int{1, 1, 5, 2, 2, 4, 4, 2}
 	fmt.Println("the single num =", singleNum(arrInt[:]))
