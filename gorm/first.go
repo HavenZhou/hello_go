@@ -58,7 +58,7 @@ func main1() {
 	// fmt.Printf("---------------------------------")
 
 	var usersTwo []User
-	errTwo := db.Debug().Where(&User{Name: "jinzhu"}, "name", "Age").Find(&usersTwo)
+	errTwo := db.Debug().Where(&User1{Name: "jinzhu"}, "name", "Age").Find(&usersTwo)
 	jsonData, _ := json.MarshalIndent(usersTwo, "", "  ")
 	fmt.Println(string(jsonData))
 	jsonDataError, _ := json.MarshalIndent(errTwo, "", "  ")
